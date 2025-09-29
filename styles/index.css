@@ -113,6 +113,10 @@ h1{
     height: 10%;
 }
 
+.h1-mobile{
+    display: none;
+}
+
 .data{
     width: 100%;
     height: 90%;
@@ -146,15 +150,19 @@ h1{
 }
 
 #wp{
-   background-color: green; 
-   color: #fff;
-   height: 100%;
-   flex: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   cursor: pointer;
+    background-color:  green; 
+    color: #fff;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#wp:hover{
+    background-color: #818181;
 }
 
 #call-logo{
@@ -162,13 +170,13 @@ h1{
 }
 
 #call{
-   background-color: rgb(0, 70, 128); 
-   height: 100%;
-   flex: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
+    background-color: rgb(0, 70, 128); 
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -178,12 +186,119 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer p{
-    color: #fff;
-    font-size: 16px;
+    padding: 0 5%;
 }
 
 
+    .footer div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    #logo-footer{
+        height: 40px;
+    }
+
+    .footer div i{
+        color: #fff;
+        font-size: 24px;
+    }
+
+
+@media (max-width: 1250px) {
+
+    .main{
+        height: 100 vh;
+    }
+
+    .card{
+        flex-direction: column;
+        height: 80vh;
+        border-radius: 0;
+    }
+
+    .h1-mobile{
+        display: flex;
+        height: 5%;
+        font-size: clamp(18px, 5vw, 32px);
+    }
+
+    .left{
+        width: 100%;
+        height: 40%;
+    }
+
+    .img-container{
+        height: 80%;
+    }
+
+    .desc p{
+        height: 100%;
+    }
+
+    .data{
+        height: 80%;
+        padding: 10%;
+        justify-content: space-between;
+    }
+
+    .data p{
+        font-size: 18px;
+        
+    }
+
+    .contact{
+        height: 15%;
+    }
+
+    #wp{
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    #call{
+        padding: 2%;
+    }
+
+    .container-logo{
+        display: none;
+    }
+
+    .h1-desktop{
+        display: none;
+    }
+
+    .footer{
+        padding: 0 4%;
+    }
+
+    .footer div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-footer{
+        height: 40px;
+    }
+
+    .footer div i{
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 410px) {
+
+    #wp{
+        font-size: 12px;
+    }
+
+    #call{
+        font-size: 12px;
+    }
+
+}
